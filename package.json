@@ -1,0 +1,33 @@
+{
+  "name": "teamweave",
+  "version": "1.0.0",
+  "description": "Hackathon Team Matcher Portal with MongoDB Persistence",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js",
+    "test:db": "node scripts/testDb.js",
+    "clean": "node scripts/clean.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb-memory-server": "^9.4.0",
+    "mongoose": "^8.5.2"
+  },
+  "keywords": [
+    "team-matcher",
+    "hackathon",
+    "kmeans",
+    "mongodb",
+    "clustering"
+  ],
+  "author": "",
+  "license": "ISC"
+}

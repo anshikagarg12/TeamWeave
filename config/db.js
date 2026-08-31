@@ -38,6 +38,9 @@ export const connectDB = async () => {
     console.log(`Initializing persistent embedded MongoDB engine with storage path: ${dataDir}...`);
     const { MongoMemoryServer } = await import('mongodb-memory-server');
     mongoServer = await MongoMemoryServer.create({
+      binary: {
+        version: '7.0.9',   
+      },
       instance: {
         dbPath: dataDir,
         storageEngine: 'wiredTiger',
